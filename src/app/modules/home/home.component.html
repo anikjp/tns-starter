@@ -1,0 +1,28 @@
+<ActionBar class="action-bar">
+    <NavigationButton ios:visibility="collapsed" icon="res://menu" (tap)="onDrawerButtonTap()"></NavigationButton>
+
+    <ActionItem icon="res://navigation/menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()"
+                ios.position="left">
+    </ActionItem>
+    <Label  class="action-bar-title" text="{{ 'app.name' | L }}"></Label>
+    <ActionItem icon="font://&#xf07a;" class="fa t-20"  android:visibility="collapsed"
+                ios.position="right">
+    </ActionItem>
+    <ActionItem icon="font://&#xf007;" class="fa t-20"  android:visibility="collapsed"
+                ios.position="right">
+    </ActionItem>
+</ActionBar>
+
+<StackLayout class="page__content">
+    <amway-search-bar></amway-search-bar>
+    <ScrollView orientation="vertical">
+        <StackLayout>
+            <amway-notification-bar></amway-notification-bar>
+            <app-home-top-banner></app-home-top-banner>
+            <amway-campaign-list></amway-campaign-list>
+            <amway-repurchase-list></amway-repurchase-list>
+            <amway-recommendation-list></amway-recommendation-list>
+            <amway-browsing-history></amway-browsing-history>
+        </StackLayout>
+    </ScrollView>
+</StackLayout>

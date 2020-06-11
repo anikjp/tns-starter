@@ -1,0 +1,8 @@
+<SearchBar
+        hint="{{ 'shared.searchBar.searchHints' | L }}"
+        [text]="searchPhrase" (textChange)="onTextChanged($event)"
+        (clear)="onClear($event)" (submit)="onSubmit($event)"
+        returnPress="doneTap"
+        class="searchBar p-12 p-b-10"
+>
+</SearchBar>

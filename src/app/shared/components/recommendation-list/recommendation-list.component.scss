@@ -1,0 +1,99 @@
+/* Add mobile styles for the component here.  */
+
+.barInfo {
+  height:50dpi;
+  font-size: 13;
+  color: #4781FE;
+  border-top-width: .2;
+  border-bottom-width: .4;
+  border-top-color: #d6d6d6;
+  border-bottom-color: #d6d6d6;
+  border-color: #4D4D4D;
+  box-shadow: 10;
+}
+
+.card-info {
+  background-color: #EC184B;
+  padding-top:2dp;
+  padding-bottom:2dp;
+  color: #FFFFFF;
+  font-size: 13dp;
+  font-weight: bold;
+  letter-spacing: -.20dp;
+  opacity: 1;
+  width:72dpi;
+  height:17dpi;
+  text-align:center;
+}
+
+.card-info1 {
+  background-color: #4D4D4D;
+  padding-top:2dp;
+  padding-bottom:2dp;
+  color: #FFFFFF;
+  font-size: 13dp;
+  font-family: Hiragino Kaku Gothic Pro;
+  font-weight: bold;
+  letter-spacing: -.10dp;
+  opacity: 1;
+  width:42dpi;
+  height:17dpi;
+  text-align:center;
+}
+
+.card-info2 {
+  background-color: #EC184B;
+  color: #FFFFFF;
+  clip-path: polygon(100% 0, 0 0, 0 100%);
+  -webkit-transform: rotate(-45deg);
+}
+
+.cart-button {
+  width: 120dpi;
+  background-color: #010101;
+  font-size: 12;
+}
+
+.class1 {
+  text-align: left;
+  font-size: 14;
+  font-weight: bold;
+  letter-spacing: 0;
+  color: #000000;
+  opacity: 1;
+  border: 1 solid;
+  height:20dp;
+  width:100%
+}
+
+.class2 {
+  text-align: left;
+  font-size: 12dpi;
+  letter-spacing: 0;
+  color: #000000;
+  opacity: 1;
+  border: 1 solid;
+  width:75dpi;
+}
+
+.class3 {
+  text-align: left;
+  font-size: 10;
+  letter-spacing: 0;
+  color: #333333;
+  opacity: 1;
+  border: 1 solid;
+}
+
+.class4 {
+  text-align: left;
+  font-size: 16dpi;
+  font-weight: bold;
+  font-family: "Roboto Regular";
+  letter-spacing: 0;
+  color: #666666;
+  opacity: 1;
+  border: 1 solid;
+  width:75dpi;
+}
+

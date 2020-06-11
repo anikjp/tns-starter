@@ -1,0 +1,34 @@
+module.exports = {
+    app: {
+        name: 'Amway',
+        version: '1.0.0'
+    },
+    ios: {
+        info: {
+            plist: {
+                NSLocationWhenInUseUsageDescription: 'This will be added to InfoPlist.strings'
+            }
+        }
+    },
+    common: {
+
+    },
+    shared: {
+        searchBar: {
+            searchHints: 'Order number / keyword'
+        }
+    },
+    user: {
+        name: 'user.name',
+        email: 'user.email'
+    },
+    array: [
+        'split the translation into ',
+        'multiples lines'
+    ],
+    sprintf: 'format me %s',
+    'sprintf with numbered placeholders': 'format me %2$s one more time %1$s',
+    hello: {
+        world: 'Hello world !'
+    }
+};

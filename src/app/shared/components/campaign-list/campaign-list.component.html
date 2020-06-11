@@ -1,0 +1,66 @@
+<amway-section-bar sectionName="キャンペイン・新製品" navigationButtonLink="/cart" navigationButtonText="一覧へ"></amway-section-bar>
+
+<ScrollView orientation="horizontal">
+    <StackLayout orientation="horizontal" padding="5, 0">
+        <GridLayout
+                *ngFor="let campaign of campaignList;index as i;"
+                class="contact"
+                rows="auto,auto,auto,auto,auto,auto"
+                paddingRight="2"
+        >
+            <StackLayout orientation="vertical" width="170dip">
+                <AbsoluteLayout>
+                    <Image [src]="campaign.url" stretch="aspectFill"
+                           height="127dip" width="170dip"></Image>
+                    <Label text="" width="40dip" height="40dip" class="card-info2" *ngIf="i ===0"></Label>
+                    <GridLayout columns="*, *" backgroundColor="lightgray" height="17dpi" top="110">
+                        <Label text="キャンペーン"
+                               col="0"
+                               class="card-info"
+                        ></Label>
+
+                        <Label text="SOP"
+                               col="1"
+                               class="card-info1"
+                               textAlignment="center"></Label>
+                    </GridLayout>
+                </AbsoluteLayout>
+
+                <StackLayout padding="5">
+                    <Label [text]="campaign.title" class="class1"></Label>
+                    <Label [text]="campaign.subtitle" class="class1"></Label>
+
+                    <GridLayout columns="*, *" height="17dp">
+                        <Label text="期間限定"
+                               row="0"
+                               col="0"
+                               backgroundColor="#F4F2F2"
+                               color="#333333"
+                               textAlignment="center"
+                               fontSize="14"
+                        ></Label>
+                        <Label text="数量限定"
+                               row="0"
+                               col="1"
+                               backgroundColor="#F4F2F2"
+                               color="#333333"
+                               fontSize="14"
+                               textAlignment="center"
+                        ></Label>
+                    </GridLayout>
+                    <Label text="2020/02/13(木)09:00〜" height="40"
+                           width="100%" class="class3"></Label>
+                </StackLayout>
+            </StackLayout>
+        </GridLayout>
+    </StackLayout>
+</ScrollView>
+
+<GridLayout columns="4*, *" class="barInfo">
+    <Label col="0" text="キャンペイン・新製品を全て見る" class="p-l-15"></Label>
+    <Label col="1" text="&#xf105;" class="fa t-20 p-r-15" textAlignment="right" ></Label>
+</GridLayout>
+
+
+
+

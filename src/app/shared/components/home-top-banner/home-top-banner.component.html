@@ -1,0 +1,28 @@
+<GridLayout columns="auto, auto, auto" rows="auto, auto" class="p-10">
+     <Carousel
+            [items]="a"
+              height="180dpi"
+              width="100%"
+              color="white"
+              android:indicatorAnimation="slide"
+              indicatorColor="black"
+              showIndicator="true"
+              row="0"
+              col="0"
+              finite="true"
+              bounce="true"
+              verticalAlignment="top"
+              ios:autoPagingInterval="3"
+              color="white"
+    >
+        <CarouselItem
+                *ngFor="let item of a.slice(1, 5)"
+        >
+            <Image
+                    height="136dpi"
+                    stretch="aspectFill"
+                    src="https://res.cloudinary.com/dpczgy6fb/image/upload/v1590077010/Screenshot_2020-05-22_at_1.03.15_AM_rm3goe.png"
+            ></Image>
+        </CarouselItem>
+    </Carousel>
+</GridLayout>

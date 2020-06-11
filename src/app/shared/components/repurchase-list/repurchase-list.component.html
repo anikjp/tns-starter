@@ -1,0 +1,39 @@
+<amway-section-bar sectionName="もう一度買う" navigationButtonLink="/cart" navigationButtonText="一覧へ"></amway-section-bar>
+
+<ScrollView class="selectedContacts" orientation="horizontal">
+    <StackLayout class="container" orientation="horizontal" class="p-b-10">
+        <GridLayout
+                *ngFor="let rePurchase of rePurchaseList"
+                class="contact"
+                rows="auto,auto,auto,auto,auto,auto"
+                class="contact"
+                rows="auto,auto,auto,auto,auto,auto"
+                paddingRight="2"
+        >
+            <StackLayout orientation="vertical" width="170dip">
+                <StackLayout padding="5">
+                    <Image [src]="rePurchase.url" stretch="aspectFill"
+                           height="127dip" width="100%" class="rounded"></Image>
+                    <Label [text]="rePurchase.title" class="class1"></Label>
+                    <Label [text]="rePurchase.title1" class="class1"></Label>
+                    <GridLayout columns="3*, *"  height="40">
+                        <Label text="¥6,000" col="0"  height="40" width="100%"
+                               textAlignment="left" class="class4"></Label>
+                        <Label text="&#xf004;" class="fa t-20" col="1" height="40"
+                               textAlignment="center" color="#008DC9"></Label>
+                    </GridLayout>
+                    <Button text="カートに入れる" width="120dpi" backgroundColor="#010101" color="white" borderRadius="17"></Button>
+                </StackLayout>
+            </StackLayout>
+        </GridLayout>
+    </StackLayout>
+</ScrollView>
+
+<GridLayout columns="4*, *" class="barInfo">
+    <Label col="0" text="導入履歴を見る" class="p-l-15"></Label>
+    <Label col="1" text="&#xf105;" class="fa t-20 p-r-15" textAlignment="right" ></Label>
+</GridLayout>
+
+
+
+

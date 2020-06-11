@@ -1,0 +1,10 @@
+"_hello_world_Z2tF6Gu" = "Hello world !";
+"_sprintf_with_numbered_placeholders_1lf5Nr" = "format me %2$@ one more time %1$@";
+"sprintf" = "format me %1$@";
+"array" = "split the translation into multiples lines";
+"_user_email_BsOGQ" = "user.email";
+"_user_name_leDLh" = "user.name";
+"_shared_searchBar_searchHints_NTdXw" = "Order number / keyword";
+"_ios_info_plist_NSLocationWhenInUseUsageDescription_ZpKiIF" = "This will be added to InfoPlist.strings";
+"_app_version_ZsTh2j" = "1.0.0";
+"_app_name_1k3Sbz" = "Amway";
